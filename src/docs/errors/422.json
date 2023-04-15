@@ -1,0 +1,18 @@
+{
+  "description": "Unprocessable Entity",
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "array",
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "get": {
+        "tags": [
+            "Chassis - Lista de chassis"
+        ],
+        "summary": "Lista de chassis",
+        "description": "Retorna uma lista de chassis",
+        "responses": {
+            "200": {
+                "description": "OK",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "properties": {
+                                    "chassi_id": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "400": {
+                "$ref": "../../errors/400.json"
+            }
+        }
+    }
+}

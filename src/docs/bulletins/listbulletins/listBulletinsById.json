@@ -1,0 +1,32 @@
+{
+  "get": {
+    "tags": [
+      "Boletins - Lista de boletins de serviço por id"
+    ],
+    "summary": "Lista de boletins de serviço por id",
+    "description": "Retorna os dados de um boletim de serviço.",
+    "responses": {
+      "200": {
+        "description": "OK",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+                "properties": {
+                  "service_bulletin_name": {
+                    "type": "string"
+                  },
+                  "part": {
+                    "type": "string"
+                  }
+                }
+              }
+          }
+        }
+      },
+      "400": {
+        "$ref": "../../errors/400.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "HexTech",
+    "description": "Documentação interna feita para auxiliar no desenvolvimento da aplicação da HexTech. Aqui você irá encontrar todos os endpoints.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Suporte",
+      "email": "lfborgesrp1@gmail.com"
+    }
+  },
+  "x-tagGroups": [
+    {
+      "name": "Boletins",
+      "tags": [
+        "Boletins - Lista de boletins de serviço",
+        "Boletins - Lista de boletins de serviço por id"
+      ]
+    },
+    {
+      "name": "Chassis",
+      "tags": [
+        "Chassis - Lista de chassis"
+      ]
+    }
+  ],
+  "servers": [
+    {
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "/bulletins/list": {
+      "$ref": "./bulletins/listbulletins/listBulletins.json"
+    },
+    "/bulletins/list/{id}": {
+      "$ref": "./bulletins/listbulletins/listBulletinsById.json"
+    },
+    "/chassi/list": {
+      "$ref": "./chassi/listChassis/listChassis.json"
+    }
+  }
+}
